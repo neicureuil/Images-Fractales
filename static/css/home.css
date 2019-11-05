@@ -1,1 +1,12 @@
-#This is css
+.jumbotron {
+
+}
+
+.main {
+
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
+  }
