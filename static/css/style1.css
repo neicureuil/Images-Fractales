@@ -4,15 +4,15 @@
   padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(67, 71, 75);
+  background-color: #DDDDDD;
 }
 
 .jumbotron {
 
 }
 
-.main {
-
+.cards-container{
+  margin-top: -90px;
 }
 
 .centerBlock {
