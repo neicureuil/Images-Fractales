@@ -42,10 +42,6 @@
     transform: translateY(-260px);
 }
 
-.card-home:hover .face.face2 {
-    transform: translateY(0px);
-}
-
 .card-home .face.face1 .content h3{
     color: #fff;
     text-align: center;
@@ -65,4 +61,21 @@
 .card-home .face.face2 .content a:hover{
     background: #333;
     color: #fff;
+}
+
+.card-home .face.face1 .content{
+    opacity: 0.25;
+    transition: 0.5s;
+}
+
+.card-home:hover .face.face1 {
+    background: #1976d2;
+}
+
+.card-home:hover .face.face2 {
+    transform: translateY(0px);
+}
+
+.card-home:hover .face.face1 .content{
+    opacity: 1;
 }
