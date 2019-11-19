@@ -12,6 +12,7 @@
 
 .card-home .face {
     width: 425px;
+    color: black;
     height: var(--maincardheight);
     transition: 0.5s;
 }
