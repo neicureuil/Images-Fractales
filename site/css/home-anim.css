@@ -1,0 +1,42 @@
+.bg-anim {
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-elem {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: rgba(255, 2, 54, 0.5);
+  animation: rotating 8s linear infinite;
+}
+
+@keyframes rotating {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+
+
+.square-center {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: rgba(10, 0, 255, 0.8);
+}
+
+.square-center:hover{
+  display: inline-block;
+  background-color: red;
+}
+
+.square-0 .square-1 .square-2 .square-3 {
+  width: 75px;
+  height: 75px;
+  display: none;
+}

@@ -1,0 +1,106 @@
+:root {
+    --maincardcolor : #333;
+    --secondcardcolor : #fff;
+    --hovercolor: #1976d2;
+    --maincardheight : 260px;
+}
+
+.card-home {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+
+.card-home .face {
+    width: 425px;
+    color: black;
+    height: var(--maincardheight);
+    transition: 0.5s;
+}
+
+.card-home .face.face2 {
+    height: 200px;
+}
+
+.card-home .face.face1 {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: var(--maincardcolor);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.card-home .face.face2 {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--secondcardcolor);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-260px);
+}
+
+.card-home .face.face1 .content h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card-home .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--maincardcolor);
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.card-home .face.face2 .content a:hover{
+    background: var(--maincardcolor);
+    color: #fff;
+}
+
+.card-home .face.face1 .content{
+    opacity: 0.25;
+    transition: 0.5s;
+}
+
+.card-home:hover .face.face1 {
+    background: var(--hovercolor);
+}
+
+.card-home:hover .face.face2 {
+    transform: translateY(0px);
+}
+
+.card-home:hover .face.face1 .content{
+    opacity: 1;
+}
+
+@media screen and (min-width: 1140px) and (max-width: 1500px){
+
+    :root {
+        --maincardheight : 250px;
+    }
+
+    .card-home .face {
+        width: 400px;
+    }
+
+    .card-home .face.face2 {
+        height: 150px;
+    }    
+
+    .card-home .face.face2 {
+        transform: translateY(-250px);
+    }
+
+    .card-home .face.face1 .content h3{
+        font-size: 1.25em;
+    }
+}

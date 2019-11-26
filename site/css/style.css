@@ -1,0 +1,35 @@
+body {
+  color: #F8F8F8;
+  background-color: #DDDDDD;
+}
+
+.navbar {
+  background-color: #161515;
+}
+
+.jumbotron {
+  background-color: #231F20;
+}
+
+footer {
+  color: black;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.cards-container{
+  margin-top: -80px;
+  margin-bottom: -90px;
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
+}
