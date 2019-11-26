@@ -33,3 +33,25 @@ footer {
     display: table;
     margin: auto;
 }
+
+.titre {
+	 display: flex;
+	 text-align: center;
+	 text-shadow: 0 1px 1px #fff;
+	 margin: 1.5em 0;
+}
+
+.titre::before, .titre::after {
+	content: "";
+	flex:1;
+	align-self: center;
+	border-bottom: 1px solid CurrentColor;
+}
+
+.titre::before {
+	margin-right: .3em
+}
+
+.titre::after {
+	margin-left: .3em
+}
