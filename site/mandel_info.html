@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Images Fractales</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+	
+		<div class="container-fluid">
+			<header>
+                <nav class="navbar navbar-dark navbar-expand-lg">
+					<a class="navbar-brand" href="index.html">ImagesFractales</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
+							<li class="nav-item"><a class="nav-link" href="dimension.html">Dimension Fractale</a></li>
+							<li class="nav-item"><a class="nav-link" href="application.html">Application</a></li>
+							<li class="nav-item dropdown active">
+							  <a class="nav-link dropdown-toggle" href="#" id="mandelMenuDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mandelbrot</a>
+							  <div class="dropdown-menu" aria-labelledby="mandelMenuDrop">
+								<a class="dropdown-item" href="mandel_info.html">Informations</a>
+								<a class="dropdown-item" href="mandel_explo.html">Explorateur</a>
+							  </div>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="nature.html">Dans la nature</a></li>
+							<li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+						</ul>
+					</div>
+				</nav>
+					
+				<div class="jumbotron jumbotron-fluid text-center">
+                    <h1 class="display-4">Mandelbrot</h1>
+					<p class="lead">Informations</p>
+					<hr class="my-4">
+					<a class="btn btn-primary btn-lg" href="mandel_explo.html" role="button">Explorer la fractale</a>
+				</div>
+			</header>
+
+			
+			<div class="page">
+                <hr>
+				<div class="container">
+                    <h2>Historique</h2>
+                    <div class="row">
+                        <div class="col-md-7 text-justify">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
+                        </div>
+                        <div class="col-md-5">
+                            <img class="img-fluid img-border" src="./images/benoit.jpg" alt="Benoit Mandelbrot" />
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>Définition</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sequi dicta est aut non corporis temporibus dolorum eius doloribus reprehenderit vitae magni magnam exercitationem, labore facere quam sint et aspernatur!</p>
+                    <img class="img-fluid img-border centerBlock" src="./images/Mandelbrot_Formule.png" alt="Formule Mandelbrot"><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ducimus distinctio esse in accusantium vero ratione quos reprehenderit sed, libero impedit pariatur. Recusandae, a nobis quaerat ea libero molestias ducimus.</p>
+                    <hr>
+                    <h2>Autosimilarité</h2>
+                    <div class="row">
+                        <div class="col-md-7 text-justify">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
+                        </div>
+                        <div class="col-md-5">
+                            <img class="img-fluid img-border centerBlock" src="./images/Mandelbrot_zoom.gif" alt="Mandelbrot Zoom" />
+                        </div>
+                    </div>
+                </div>
+			</div>
+            
+
+			<br>
+			<hr>    
+
+
+            <footer>
+                <p class="text-center">&copy Images-Fractales - Des gens</p>
+            </footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+
+</html>

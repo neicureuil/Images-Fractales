@@ -55,3 +55,11 @@ footer {
 .titre::after {
 	margin-left: .3em
 }
+
+.container {  
+  color: black;
+}
+
+.img-border {
+  border: 1.5px solid black;
+}
