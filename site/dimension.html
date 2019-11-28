@@ -1,1 +1,142 @@
-a
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Images Fractales</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+	
+		<div class="container-fluid container-fluid-home">
+			<header>
+                <nav class="navbar navbar-dark navbar-expand-lg">
+					<a class="navbar-brand" href="index.html">ImagesFractales</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="presentation.html">Présentation</a></li>
+							<li class="nav-item active"><a class="nav-link" href="dimension.html">Dimension Fractale</a></li>
+							<li class="nav-item"><a class="nav-link" href="application.html">Application</a></li>
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="mandelMenuDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mandelbrot</a>
+							  <div class="dropdown-menu" aria-labelledby="mandelMenuDrop">
+								<a class="dropdown-item" href="mandel_info.html">Informations</a>
+								<a class="dropdown-item" href="mandel_explo.html">Explorateur</a>
+							  </div>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="nature.html">Dans la nature</a></li>
+							<li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+						</ul>
+					</div>
+				</nav>
+					
+				<div class="jumbotron jumbotron-fluid text-center">
+                    <h1 class="display-4">Dimensions</h1>
+					<p class="lead">Informations</p>
+					<hr class="my-4">
+					<a class="btn btn-primary btn-lg" href="index.html" role="button">Accueil</a>
+				</div>
+			</header>
+
+			
+			<div class="page">
+                <hr>
+				<div class="container">
+                    <h2>Préambule</h2>
+                    <div class="row">
+                        <div class="col-md-7 text-justify">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid rounded" src="./images/formule.jpeg" width="100" alt="Formule de dimension" />
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="img-fluid rounded" src="./images/Koch.png" alt="Evolution fractale" />
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>Tableau des dimensions</h2>
+                    <br>
+                    <table class="table table-secondary">
+                        <thead>
+                            <tr class="table-primary text-center">
+                                <th>Définition</th>
+                                <th>Applicabilité</th>
+                                <th>Formule</th>
+                                <th>Commentaires</th>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Dimension de Hausdorff</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Dimension d'homotétie (1)</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Dimension d'homotétie (2)</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>Minkowski-Bouligand</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                            </tr>
+                    </thead>
+                    </table>
+                    <h2>Exemple</h2>
+                    <div class="row">
+                            <div class="col-md-5">
+                                    <img class="img-fluid rounded" src="./images/julia.jpg" alt="Geologie" />
+                                </div>
+                        <div class="col-md-7 text-justify">
+                            <li>un côté du flocon de Koch est formé de n = 4 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :</li>
+                            <img  class="img-fluid" src="./images/flocon_koch.svg" alt="Formule du flocon de Koch"/>
+                            <br><br>
+                            <li>le triangle de Sierpinski est formé de n = 3 exemplaires de lui-même réduit d'un facteur h = 2. Sa dimension fractale vaut :</li>
+                            <img  class="img-fluid" src="./images/triangle_sierpinski.svg" alt="Formule du triangle de Sierpinski"/>
+                            <br><br>
+                            <li>le tapis de Sierpinski est formé de n = 8 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :</li>
+                            <img  class="img-fluid" src="./images/tapis_sierpinski.svg" alt="Formule du tapis de Sierpinski"/>
+                        </div>
+                    </div>
+                    </tr>
+                    <hr>
+                    <div class="d-flex justify-content-center">
+                        <img  class="img-fluid" src="./images/tapis_sierpinski.gif" width="300" alt="Evolution du tapis de Sierpinski"/>
+                    </div>
+                    <p class="text-center">Evolution du tapis de Sierpinski</p>
+                </div>
+			</div>
+            
+
+			<br>
+			<hr>    
+
+
+            <footer>
+                <p class="text-center">&copy Images Fractales - Jérémy GRAFFAN, Lucas POLLET & Arsène FOUGEROUSE</p>
+            </footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+
+</html>
