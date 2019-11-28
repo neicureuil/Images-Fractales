@@ -1,0 +1,231 @@
+
+.fa-github{
+  background-color: white;
+  color: #24292e;
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.18,.89,.46,1.07);
+}
+
+.fa-github:hover{
+  transform: scale(1.2) rotate(-359deg);
+  background-color: #24292e;
+  color: white;
+}
+
+.fab{
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bg-facebook{
+  margin-top: -0.051em;
+  background-color: #3C599F;
+  color: transparent;
+}
+
+.bg-twitter{
+  margin-top: -0.051em;
+  background-color:#4099FF;
+  color: transparent;
+}
+
+
+.top1-twitter, .top2-twitter{
+  color: white;
+  background-color: transparent;
+}
+
+.anim-twitter{
+  animation: eye 2.5s linear;
+}
+
+.anim2-twitter{
+  animation: transparence 2.8s linear;
+}
+
+@keyframes arc-en-ciel{
+  from{
+    color: white
+  }
+  14%{
+    color: #ff0000;
+  }
+  28%{
+    color: #ffff00;
+  }
+  42%{
+    color: #00ff00;
+  }
+  56%{
+    color: #00ffff;
+  }
+  70%{
+    color: #0000ff;
+  }
+  84%{
+    color: #ff00ff;
+  }
+  to{
+  color: transparent;
+  } 
+}
+
+
+@keyframes transparence{
+  22%{
+    color: white;
+  }
+  23%{
+    color: transparent;
+  }
+  90%{
+    color:transparent
+  }
+  to{
+    color : white;
+  }
+}
+
+
+
+@keyframes eye {
+  from{
+    transform: translate(0)
+  }
+  20%{
+    background-color: black;
+    transform : scale(0.1) translate(0);
+  }
+  25%{
+    transform : translate(-10px, 20px) scale(0.1)
+  }
+  32%{
+    transform : translate(15px, 17px) scale(0.1)
+  }
+  44%{
+    transform : translate(-15px, -17px) scale(0.1)
+  }
+  52%{
+    transform : translate(0.18em, -0.34em) scale(0.05)
+  }
+  60%{
+    background-color: black;
+    transform : translate(0.18em, -0.34em) scale(0.05)
+  }
+  62%{
+    background-color: transparent;
+    transform : translate(0.18em, -0.34em) scale(0.05)
+    
+  }
+  64%{
+    transform : translate(0.18em, -0.34em) scale(0.05);
+    background-color : black;
+  }
+  70%{
+    background-color: black;
+    transform : translate(0.18em, -0.34em) scale(0.05)
+  }
+  72%{
+    background-color: transparent;
+    transform : translate(0.18em, -0.34em) scale(0.05);
+    
+  }
+  74%{
+    transform : translate(0.18em, -0.34em) scale(0.05);
+    background-color : black;
+  }
+  
+  90%{
+    background-color : black;
+    transform : translate(0.18em, -0.34em) scale(0.05)
+  }
+  
+  to{
+    transform : scale(1);
+    background-color: #4099FF;
+  }
+}
+
+@keyframes scale {
+  0%{
+    transform : scale(1);
+  }
+  18%{
+    background-color: #3C599F;
+  }
+  35%{
+    background-color: black;
+  }
+  50%{
+    transform : scale(0.5);
+    border-radius: 0%;   
+  }
+  53%{
+    background-color: black;
+  }
+  60%{
+    background-color: #3C599F;
+    transform : scale(0.5);
+  }
+  to{
+    transform : scale(1);
+  }
+}
+
+.top-facebook{
+  color : white;
+}
+
+.red{
+  color: #0ff;
+}
+
+.blue{
+  color : #f0f;
+}
+
+.red-anim{		
+  animation: glitch .3s cubic-bezier(.25, .46, .45, .94) .3s both 2	
+}
+.blue-anim{		
+  animation: glitch .3s cubic-bezier(.25, .46, .45, .94) .3s reverse both 2		
+}
+
+.bg-fb-anim{
+  animation : scale 2s cubic-bezier(.18,.89,.46,1.07);
+}
+
+
+@media only screen and (max-width: 400px) {
+	.glitch {
+		font-size: 3em;
+	}
+}
+
+
+@keyframes glitch {
+	0% {
+		transform: translate(0)
+	}
+	20% {
+		transform: translate(-2px, 2px)
+	}
+	40% {
+		transform: translate(-2px, -2px)
+	}
+	60% {
+		transform: translate(2px, 2px)
+	}
+	80% {
+		transform: translate(2px, -2px)
+	}
+	to {
+		transform: translate(0)
+	}
+
