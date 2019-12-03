@@ -1,0 +1,38 @@
+.img-galery{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    overflow: hidden;
+    width: 0;
+    height: 13%;
+    transition: .5s ease;
+    border-bottom-right-radius: 10px;
+}
+
+.img-container:hover .overlay {
+    width: 50%;
+}
+
+.img-container .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
