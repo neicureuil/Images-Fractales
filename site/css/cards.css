@@ -8,9 +8,21 @@
 .card-home {
     position: relative;
     cursor: pointer;
-    padding-bottom: 1em;
+    color:transparent;
+    margin-bottom: 1em;
+    transition-duration: .5s;
 }
-
+.card-home .ombre{
+    background: transparent;
+    height:260px;
+    margin-top: -400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    transition-duration: .5s;
+}
 .card-home .face {
     width: 425px;
     color: black;
@@ -29,7 +41,7 @@
     justify-content: center;
     align-items: center;
     background: var(--maincardcolor);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+    transition: .75s;
 }
 
 .card-home .face.face2 {
@@ -40,7 +52,6 @@
     align-items: center;
     padding: 10px;
     background: var(--secondcardcolor);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-260px);
 }
 
@@ -52,6 +63,7 @@
 
 .card-home .face.face2 .content a{
     margin: 15px 0 0;
+    color: transparent;
     display:  inline-block;
     text-decoration: none;
     font-weight: 900;
@@ -71,15 +83,27 @@
 }
 
 .card-home:hover .face.face1 {
+    transform : translate(-2px,-2px);
     background: var(--hovercolor);
+    box-shadow: .2em .2em .15em rgba(44, 44, 44, 0.5);
 }
 
-.card-home:hover .face.face2 {
+.card-home:hover .face.face2{
     transform: translateY(0px);
 }
 
+.card-home:hover .ombre{
+    height: 400px;  
+    box-shadow: .5em .5em .2em rgba(44, 44, 44, 0.5);
+}
+
+
 .card-home:hover .face.face1 .content{
     opacity: 1;
+}
+
+.card-home:hover{
+    transform : translate(-5px,-5px);
 }
 
 @media screen and (min-width: 1140px) and (max-width: 1500px){
