@@ -6,3 +6,34 @@ Liens :
 menu : https://onepagelove.com/
 card : https://codepen.io/Jhonierpc/pen/MWgBJpy
 wiki : https://fr.wikipedia.org/wiki/Fractale
+
+A faire:
+
+
+Oral:
+
+  Lucas:
+  Présenter brievement, choix du sujet : sujet original qu'on ne connaissait pas, interessé par les maths
+  //après présentation accueil
+  Présentation du template : 
+  Site visuel basé basée teintes froides pour faire resortir images fractales (teintes chaudes)
+  container: 2/3 page et centrer : pour lire facilement et mettre images à coté
+    row+colonnes : contient texte + image / sinon juste row alterné pour le style
+    hr entre chaque row --> séparer les parties
+    titre au dessus de la colonne pour montrer qu'il contient les 2
+  jumbotron : Afficher titre page + boutons navigation en haut car sens de lecture pour naviguer facilement
+  footer: discret juste pour le copyrigth pas besoin d'autres infos parce que présence 2 menus + page équipe
+  
+
+
+Jérémy :
+  -Accueil : menu (navbar) naviguer entre onglets, respecte pas template pour démarquer cartes --> navigation visuelles plus rapide/instinctive, image pas encore mise pas présentes partout
+  -Mandelbrot explo : page visuelle pour montrer différentes phases fractales, vidéo pour illustrer zoom fractale
+  -Mandel info : hr pour changement de partie, titre en gras pour différencier, légende css pour renseigner, image cliquable --> bio
+  
+ Arsène :
+  Dimension: Même style template,Tableau bootstrap pour différentes dimensions, 1ère ligne en bleu pour voir titre, gif pour illustrer l'évolution fractale
+  Equipe: respecte pas template pour démarquer, card bootstrap pour chaque membre, images répresentatives pour pas avoir de phots, animations sur icones pour rendre site dynamique et stylé
+  
+  Ordre de présentation :
+  Choix du sujet, page de gauche à droite dans le menu, parler du template au moment page présentation
