@@ -9,7 +9,7 @@
     position: relative;
     cursor: pointer;
     color:transparent;
-    margin-bottom: 1em;
+    margin-bottom: 10em;
     transition-duration: .5s;
 }
 .card-home .ombre{
@@ -98,11 +98,14 @@
 }
 
 
+
+
 .card-home:hover .face.face1 .content{
     opacity: 1;
 }
 
 .card-home:hover{
+    margin-bottom: 0em;
     transform : translate(-5px,-5px);
 }
 
