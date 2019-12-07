@@ -71,13 +71,13 @@
                                             <p class="card-text text-justify" style="padding: 0em 1em;">Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita</p>
                                             <hr>
                                             <div class="d-flex justify-content-around" style="margin-bottom: 1.5em;">
-                                                <span class="fa-stack fa-fb fa-lg">
+                                                <span class="fa-stack fa-fb1 fa-lg">
                                                     <i class="fab fa-facebook fa-stack-2x red"></i>    
                                                     <i class="fab fa-facebook fa-stack-2x blue"></i>
                                                     <i class="fab fa-facebook fa-stack-2x bg-facebook"></i>  
                                                     <i class="fab fa-facebook fa-stack-2x top-facebook"></i>
                                                 </span>
-                                                <span class="fa-stack fa-tw fa-lg">
+                                                <span class="fa-stack fa-tw1 fa-lg">
                                                     <i class="fab fa-twitter fa-stack-2x top1-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x bg-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x top2-twitter"></i>
@@ -104,13 +104,13 @@
                                             <p class="card-text text-justify" style="padding: 0em 1em;">Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita</p>
                                             <hr>
                                             <div class="d-flex justify-content-around" style="margin-bottom: 1.5em;">
-                                                <span class="fa-stack fa-fb fa-lg">
+                                                <span class="fa-stack fa-fb2 fa-lg">
                                                     <i class="fab fa-facebook fa-stack-2x red"></i>    
                                                     <i class="fab fa-facebook fa-stack-2x blue"></i>
                                                     <i class="fab fa-facebook fa-stack-2x bg-facebook"></i>  
                                                     <i class="fab fa-facebook fa-stack-2x top-facebook"></i>
                                                 </span>
-                                                <span class="fa-stack fa-tw fa-lg">
+                                                <span class="fa-stack fa-tw2 fa-lg">
                                                     <i class="fab fa-twitter fa-stack-2x top1-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x bg-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x top2-twitter"></i>
@@ -137,13 +137,13 @@
                                             <p class="card-text text-justify" style="padding: 0em 1em;">Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita</p>
                                             <hr>
                                             <div class="d-flex justify-content-around" style="margin-bottom: 1.5em;">
-                                                <span class="fa-stack fa-fb fa-lg">
+                                                <span class="fa-stack fa-fb3 fa-lg">
                                                     <i class="fab fa-facebook fa-stack-2x red"></i>    
                                                     <i class="fab fa-facebook fa-stack-2x blue"></i>
                                                     <i class="fab fa-facebook fa-stack-2x bg-facebook"></i>  
                                                     <i class="fab fa-facebook fa-stack-2x top-facebook"></i>
                                                 </span>
-                                                <span class="fa-stack fa-tw fa-lg">
+                                                <span class="fa-stack fa-tw3 fa-lg">
                                                     <i class="fab fa-twitter fa-stack-2x top1-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x bg-twitter"></i>
                                                     <i class="fab fa-twitter fa-stack-2x top2-twitter"></i>
@@ -173,27 +173,72 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script>
+		
+                $(".fa-tw1").hover(function(){
+                    $(".fa-tw1 .bg-twitter").addClass("anim-twitter");
+                    $(".fa-tw1 .top2-twitter").addClass("anim2-twitter");    
+                    $(".fa-tw1 .top1-twitter").addClass("anim3-twitter");   
+                });
+                $(".fa-tw1").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-tw1 .bg-twitter").removeClass("anim-twitter");
+                    $(".fa-tw1 .top2-twitter").removeClass("anim2-twitter");        
+                    $(".fa-tw1 .top1-twitter").removeClass("anim3-twitter");   
+                });
+
+                $(".fa-tw2").hover(function(){
+                    $(".fa-tw2 .bg-twitter").addClass("anim-twitter");
+                    $(".fa-tw2 .top2-twitter").addClass("anim2-twitter");    
+                    $(".fa-tw2 .top1-twitter").addClass("anim3-twitter");   
+                });
+                $(".fa-tw2").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-tw2 .bg-twitter").removeClass("anim-twitter");
+                    $(".fa-tw2 .top2-twitter").removeClass("anim2-twitter");        
+                    $(".fa-tw2 .top1-twitter").removeClass("anim3-twitter");   
+                });
+
+                $(".fa-tw3").hover(function(){
+                    $(".fa-tw3 .bg-twitter").addClass("anim-twitter");
+                    $(".fa-tw3 .top2-twitter").addClass("anim2-twitter");    
+                    $(".fa-tw3 .top1-twitter").addClass("anim3-twitter");   
+                });
+                $(".fa-tw3").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-tw3 .bg-twitter").removeClass("anim-twitter");
+                    $(".fa-tw3 .top2-twitter").removeClass("anim2-twitter");        
+                    $(".fa-tw3 .top1-twitter").removeClass("anim3-twitter");   
+                });
+
         
-                $(".fa-tw").hover(function(){
-                    $(".bg-twitter").addClass("anim-twitter");
-                    $(".top2-twitter").addClass("anim2-twitter");    
-                    $(".top1-twitter").addClass("anim3-twitter");   
+                $(".fa-fb1").hover(function(){
+                    $(".fa-fb1 .bg-facebook").addClass("bg-fb-anim");
+                    $(".fa-fb1 .red").addClass("red-anim");
+                    $(".fa-fb1 .blue").addClass("blue-anim");
                 });
-                $(".fa-tw").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
-                    $(".bg-twitter").removeClass("anim-twitter");
-                    $(".top2-twitter").removeClass("anim2-twitter");        
-                    $(".top1-twitter").removeClass("anim3-twitter");   
+                $(".fa-fb1").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-fb1 .bg-facebook").removeClass("bg-fb-anim");
+                    $(".fa-fb1 .red").removeClass("red-anim");
+                    $(".fa-fb1 .blue").removeClass("blue-anim");
                 });
-        
-                $(".fa-fb").hover(function(){
-                    $(".bg-facebook").addClass("bg-fb-anim");
-                    $(".red").addClass("red-anim");
-                    $(".blue").addClass("blue-anim");
+
+                $(".fa-fb2").hover(function(){
+                    $(".fa-fb2 .bg-facebook").addClass("bg-fb-anim");
+                    $(".fa-fb2 .red").addClass("red-anim");
+                    $(".fa-fb2 .blue").addClass("blue-anim");
                 });
-                $(".fa-fb").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
-                    $(".bg-facebook").removeClass("bg-fb-anim");
-                    $(".red").removeClass("red-anim");
-                    $(".blue").removeClass("blue-anim");
+                $(".fa-fb2").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-fb2 .bg-facebook").removeClass("bg-fb-anim");
+                    $(".fa-fb2 .red").removeClass("red-anim");
+                    $(".fa-fb2 .blue").removeClass("blue-anim");
+                });
+
+                $(".fa-fb3").hover(function(){
+                    $(".fa-fb3 .bg-facebook").addClass("bg-fb-anim");
+                    $(".fa-fb3 .red").addClass("red-anim");
+                    $(".fa-fb3 .blue").addClass("blue-anim");
+                });
+                $(".fa-fb3").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+                    $(".fa-fb3 .bg-facebook").removeClass("bg-fb-anim");
+                    $(".fa-fb3 .red").removeClass("red-anim");
+                    $(".fa-fb3 .blue").removeClass("blue-anim");
                 });
         </script>
     </body>
