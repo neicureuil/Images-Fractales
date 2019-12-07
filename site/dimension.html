@@ -41,7 +41,7 @@
 					
 				<div class="jumbotron jumbotron-fluid text-center">
                     <h1 class="display-4">Dimensions</h1>
-                    <p class="lead">Informations</p>
+                    <br>
                     <a class="btn btn-outline-secondary btn-lg" href="presentation.html" role="button"><i class="fas fa-chevron-left"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <a class="btn btn-outline-primary btn-lg" href="index.html" role="button">Accueil</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <a class="btn btn-outline-secondary btn-lg" href="application.html" role="button"><i class="fas fa-chevron-right"></i></a>
@@ -55,7 +55,9 @@
                     <h2>Préambule</h2>
                     <div class="row">
                         <div class="col-md-7 text-justify">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
+                            <p>Lorem ipsum dolor 
+                            <span class="font-weight-bold" data-toggle="tooltip" title="Définition du mot compliqué" >un mot compliqué</span>
+                            sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
                             <div class="d-flex justify-content-center">
                                 <img class="img-fluid rounded" src="./images/formule.jpeg" width="100" alt="Formule de dimension" />
@@ -140,6 +142,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
 
 </html>

@@ -40,8 +40,8 @@
 				</nav>
 					
 				<div class="jumbotron jumbotron-fluid text-center">
-                    <h1 class="display-4">Applications</h1>
-					<p class="lead">Informations</p>
+					<h1 class="display-4">Applications</h1>
+					<br>
 					<a class="btn btn-outline-secondary btn-lg" href="dimension.html" role="button"><i class="fas fa-chevron-left"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <a class="btn btn-outline-primary btn-lg" href="index.html" role="button">Accueil</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <a class="btn btn-outline-secondary btn-lg" href="mandel_info.html" role="button"><i class="fas fa-chevron-right"></i></a>
@@ -53,6 +53,14 @@
 			<div class="page">
                 <hr>
 				<div class="container">
+					<h2>Préambule</h2>
+					<div class="row">
+						<div class="col-md-12 text-justify">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ab, minima, earum, vero natus magni nisi obcaecati nobis delectus tempora suscipit? Quos porro qui dolor blanditiis cumque doloremque! Delectus, tempore?*</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet facilis amet mollitia tempora rerum facere nisi nemo impedit quis esse, modi voluptates consequatur deleniti consectetur soluta molestiae? Exercitationem, neque.</p>
+						</div>
+					</div>
+					<hr>
                     <h2>Arts graphiques</h2>
                     <div class="row">
                         <div class="col-md-7 text-justify">
@@ -60,14 +68,14 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
                         </div>
                         <div class="col-md-5">
-                            <img class="img-fluid rounded" src="./images/art_fractale.jpg" alt="Chou Romanesco" />
+                            <img class="img-fluid rounded" src="./images/appli/art_fractale.jpg" alt="Chou Romanesco" />
                         </div>
                     </div>
                     <hr>
                     <h2>Biologie/Géologie</h2>
                     <div class="row">
                             <div class="col-md-5">
-                                    <img class="img-fluid rounded" src="./images/geologie.jpg" alt="Geologie" />
+                                    <img class="img-fluid rounded" src="./images/appli/geologie.jpg" alt="Geologie" />
                                 </div>
                         <div class="col-md-7 text-justify">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
@@ -82,7 +90,18 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
                         </div>
                         <div class="col-md-5">
-                            <img class="img-fluid rounded" src="./images/xaos.png" alt="Logiciel Xaos" />
+                            <img class="img-fluid rounded" src="./images/appli/xaos.png" alt="Logiciel Xaos" />
+                        </div>
+					</div>
+					<hr>
+					<h2>Isolation sonore</h2>
+					<div class="row">
+						<div class="col-md-5">
+							<img class="img-fluid rounded" src="./images/appli/isola.jpg" alt="Isolation sonore" />
+						</div>
+                        <div class="col-md-7 text-justify">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
                         </div>
                     </div>
                 </div>
@@ -100,6 +119,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
 	</body>
 
 </html>

@@ -21,8 +21,12 @@
     border-bottom-right-radius: 10px;
 }
 
+.overlay-20 {
+    height: 20%;
+}
+
 .img-container:hover .overlay {
-    width: 50%;
+    width: 55%;
 }
 
 .img-container .text {
@@ -35,4 +39,12 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
+}
+
+.table.table-bordered > tbody > tr > td{
+    border:1px solid black;
+}
+
+.table.table-bordered > thead > tr > th{
+    border:1px solid black;
 }
