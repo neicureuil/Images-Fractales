@@ -9,11 +9,17 @@ wiki : https://fr.wikipedia.org/wiki/Fractale
 
 A faire:
 
+PLUS DE DETAILS DANS LES PARTIES POUR DURER 10MIN.
 
 Oral:
 
-  Lucas:
-  Présenter brievement, choix du sujet : sujet original qu'on ne connaissait pas, interessé par les maths
+ Lucas:
+  Choix du sujet : Avions décidé de choisir un sujet que nous ne maitrissions pas. Ce dut proposant la spécialisation Imagerie numérique en 
+  2eme année nous avons décidé de choisir un sujet pouvant s'y apparenter. Notre choix s'est porté sur les images fractales qui combinent 
+  des mathématiques et du visuelle. + Définition
+  Notre site est composée de plusieurs page html qui représentent chacune une grande partie du site sans compter les pages accueil et equipe
+  qui sont à part et servent à rendre le site plus dynamiques.
+ 
   //après présentation accueil
   Présentation du template : 
   Site visuel basé basée teintes froides pour faire resortir images fractales (teintes chaudes)
@@ -32,8 +38,16 @@ Jérémy :
   -Mandel info : hr pour changement de partie, titre en gras pour différencier, légende css pour renseigner, image cliquable --> bio
   
  Arsène :
-  Dimension: Même style template,Tableau bootstrap pour différentes dimensions, 1ère ligne en bleu pour voir titre, gif pour illustrer l'évolution fractale
-  Equipe: respecte pas template pour démarquer, card bootstrap pour chaque membre, images répresentatives pour pas avoir de phots, animations sur icones pour rendre site dynamique et stylé
+  Dimension: 
+    Même style template
+    Tableau bootstrap pour différentes dimensions
+    1ère ligne en bleu pour voir titre
+    gif pour illustrer l'évolution fractale
+  Equipe: 
+    Respecte pas template pour démarquer
+    Card bootstrap pour chaque membre placé sur 1 row afin de ne pas avoir à scroller
+    AAvatars afin d'éviter photos comprométantes
+    Animations sur icones pour rendre site dynamique et stylé
   
   Ordre de présentation :
   Choix du sujet, page de gauche à droite dans le menu, parler du template au moment page présentation
