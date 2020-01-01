@@ -8,7 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-		<link rel="stylesheet" href="./css/style.css" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
 	</head>
 
 	<body>
@@ -16,7 +18,7 @@
 		<div class="container-fluid container-fluid-home">
 			<header>
                 <nav class="navbar navbar-dark navbar-expand-lg">
-					<a class="navbar-brand" href="index.html">ImagesFractales</a>
+					<a class="navbar-brand" href="index.html">Images Fractales</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -40,7 +42,7 @@
 				</nav>
 					
 				<div class="jumbotron jumbotron-fluid text-center">
-                    <h1 class="display-4">Dimensions</h1>
+                    <h1 class="display-4">Dimension fractale</h1>
                     <br>
                     <a class="btn btn-outline-secondary btn-lg" href="presentation.html" role="button"><i class="fas fa-chevron-left"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <a class="btn btn-outline-primary btn-lg" href="index.html" role="button">Accueil</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -55,22 +57,44 @@
                     <h2>Préambule</h2>
                     <div class="row">
                         <div class="col-md-7 text-justify">
-                            <p>Lorem ipsum dolor 
-                            <span class="font-weight-bold" data-toggle="tooltip" title="Définition du mot compliqué" >un mot compliqué</span>
-                            sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
-                            <div class="d-flex justify-content-center">
-                                <img class="img-fluid rounded" src="./images/formule.jpeg" width="100" alt="Formule de dimension" />
-                            </div>
+                            <p>La dimension d'une fractale D est une grandeur qui traduit la façon dont une fractale occupe l'espace.
+                            
+                                La dimension d'une fractale n'est pas une chose simple à calculer. A l'invers d'un droite, d'un plan et d'un volume qui ont une dimension entière. Dans le cas d'une fractale, cette dimension est un réel positif. La dimension fractale est un terme qui recouvre
+                                plusieurs définitions. 
+                                Les définitions les plus importantes sont la dimension de Hausdorff, la dimension de Minkowski-Bouligand et la dimension de corrélation</p>
+                            
+                                <p>
+                            
+                            <h2>
+
+                            </h2>
+
+                            <h3>Approche didactique</h3>
+                            <ol>
+                                <li>La dimension D d'un segment, d'un cercle et d'une courbe régulière est de 1. Sa longueur est multipliée par <span style="display:inline-block;">$$2= 2^{1}$$</span> lorsque sa taille double.</li>
+                                <li>La dimension D d'une surface simple et bornée est de 2. Elle a une aire finie et cette aire est multipliée par <span style="display:inline-block;">$$4= 2^{2}$$</span> lorsque sa taille double.</li>
+                                <li>La dimension D d'un volume simple et borné dans l'espace est de 3. Il a un volume fini et ce volume est multiplié par <span style="display:inline-block;">$$8= 2^{3}$$</span> lorsque sa taille double.</li>
+                            </ol>
+                            <p>D est la dimension d'un objet, alors la mesure de cet objet est multipliée par \(n^{D}\) lorsque la taille de cet objet est multipliée par <em>n</em>.</p>
+                        <p>Or, par exemple, la longueur de la courbe de Koch est multipliée par 4 lorsque sa taille triple (En effet, cette courbe est précisément définie comme étant constituée de quatre copies d'elle-même, trois 
+                            fois plus petites). Puisque \( 4 \approx 3^{1,26} \) , on peut considérer intuitivement qu'il s'agit d'un objet de dimension : \(D \approx 1,26\) (plus précisément, \( D = {log ⁡4 \over log3} \) ). 
+                                Il ne s'agit plus d'une simple courbe unidimensionnelle, ni d'une surface, elle se situe « entre les deux ». Cette « dimension fractale », non entière, est caractéristique des ensembles fractals. </p>
+                        <p>Quand la fractale est formée de répliques d'elle-même en plus petit, sa dimension fractale peut se calculer comme suit : </p> 
+
+                            <p>\(D={{log(n)} \over {log(h)}}\) où <em>n</em> réprésente le nombre de motifs répétés et <em>h</em> le facteur de réduction</p>
+
                         </div>
-                        <div class="col-md-5">
-                            <img class="img-fluid rounded" src="./images/Koch.png" alt="Evolution fractale" />
+                        <div class="img-container col-md-5">
+                                <img class="img-fluid rounded" src="./images/Koch.png" alt="Evolution fractale" />
+                            <div class="img-source">
+                                <div class="text"><a href="http://google.fr">La source clickable</a></div>
+                            </div>
                         </div>
                     </div>
                     <hr>
                     <h2>Tableau des dimensions</h2>
                     <br>
-                    <table class="table table-secondary">
+                    <table class="table table-responsive-sm table-secondary">
                         <thead>
                             <tr class="table-primary text-center">
                                 <th>Définition</th>
@@ -80,27 +104,28 @@
                             </tr>
                             <tr class="table-secondary">
                                 <td>Dimension de Hausdorff</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>La plus rigoureuse, et définie pour tout ensemble, elle est peu aisée à mettre en œuvre.</td>
+                                <td>$$  D_{H}=inf \{ s,H^{8}(X)=0 \} = sup \{ s,H^{8}(X)= \infty \} $$ où <span style="display:inline-block;">$$H^{8}(X)$$</span> est la mesure de Hausdorff de l'ensemble</td>
+                                <td>Elle s'appuie sur une mesure, la mesure de Hausdorff. C'est la valeur critique de <em>s</em> pour laquelle la valeur de la mesure <span style="display:inline-block;">$$H^{8}(X)$$</span> passe de 0 à l'infini. </td>
                             </tr>
                             <tr class="table-secondary">
                                 <td>Dimension d'homotétie (1)</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Limitée aux ensembles à homothéties internes</td>
+                                <td><span style="display:inline-block;">$$ D_{H} $$</span>est solution de <span style="display:inline-block;">$$\sum_{k=1}^N r_{k}^{D_{h}}=1$$</span>
+                                où <em>N</em> est le nombre d'homothéties et <span style="display:inline-block;">$$r_{k}$$</span> le rapport l'homothétie de rang <em>k</em>. Dans le cas de rapports identiques, elle admet une solution analytique simple (voir ci-dessous)</td>
+                                <td>C'est la traduction la plus simple de la dimension de Hausdorff, applicable aux seuls ensembles fractals à homothétie interne où les homothéties qui les composent sont toutes deux à deux disjointes. Attention, cette formule n'est pas applicable dans le cas de transformations affines ou non-linéaires. </td>
                             </tr>
                             <tr class="table-secondary">
                                 <td>Dimension d'homotétie (2)</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Limitée aux ensembles à homothéties internes de même rapport</td>
+                                <td><span style="display:inline-block;">$$ D_{h}={{ln(N)} \over {ln({1 \over {r}})}} $$</span>où <em></em> est le nombre d'homothéties et <em></em> le rapport d'homothétie</td>
+                                <td>C'est un cas particulier de solution pour l'équation générale ci-dessus. La dimension d'homothétie vaut alors le quotient logarithmique entre le nombre d'homothéties internes de l'ensemble, sur l'inverse du rapport d'homothétie. </td>
                             </tr>
                             <tr class="table-secondary">
-                                <td>Minkowski-Bouligand</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
-                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime</td>
+                                <td>Dimension de Minkowski-Bouligand ou 'Box-counting'</td>
+                                <td>Tout ensemble</td>
+                                <td><span style="display:inline-block;">$$ D_{box}=\lim_{\varepsilon \to 0} {log N (\varepsilon) \over log({1 \over \varepsilon})}$$</span>où <em>N(ε)</em> est un nombre de sous-ensembles de diamètre au plus <em>ε</em> nécessaires pour recouvrir l'ensemble.</td>
+                                <td>La plus courante et la plus simple pour mesurer numériquement la dimension d'une fractale. Elle prend pour base la couverture de l'ensemble fractal par des ensembles de taille décroissantes. S'appuie sur une notion de comptage et non de mesure, ce qui la rend moins universelle. Peut, alors, être supérieure à la dimension de Hausdorff, mais jamais inférieure. </td>
                             </tr>
                     </thead>
                     </table>
@@ -111,14 +136,17 @@
                                     <img class="img-fluid rounded" src="./images/julia.jpg" alt="Geologie" />
                                 </div>
                         <div class="col-md-7 text-justify">
-                            <li>un côté du flocon de Koch est formé de n = 4 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :</li>
-                            <img  class="img-fluid" src="./images/flocon_koch.svg" alt="Formule du flocon de Koch"/>
-                            <br><br>
-                            <li>le triangle de Sierpinski est formé de n = 3 exemplaires de lui-même réduit d'un facteur h = 2. Sa dimension fractale vaut :</li>
-                            <img  class="img-fluid" src="./images/triangle_sierpinski.svg" alt="Formule du triangle de Sierpinski"/>
-                            <br><br>
-                            <li>le tapis de Sierpinski est formé de n = 8 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :</li>
-                            <img  class="img-fluid" src="./images/tapis_sierpinski.svg" alt="Formule du tapis de Sierpinski"/>
+                            <li>un côté du flocon de Koch est formé de n = 4 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :
+                                <p class="d-flex justify-content-start">$$D={{ln(4)} \over {ln(3)}} \approx 1,2618595\ldots$$</p class="d-flex justify-content-start"> 
+                            </li>
+                            
+                            <li>le triangle de Sierpinski est formé de n = 3 exemplaires de lui-même réduit d'un facteur h = 2. Sa dimension fractale vaut :
+                                <p class="d-flex justify-content-start">$$D={{ln(3)} \over {ln(2)}} \approx 1,5849625\ldots$$</p class="d-flex justify-content-start"> 
+                            </li>
+                            
+                            <li>le tapis de Sierpinski est formé de n = 8 exemplaires de lui-même réduit d'un facteur h = 3. Sa dimension fractale vaut :
+                                <p class="d-flex justify-content-start">$$D={{ln(8)} \over {ln(3)}} \approx 1,892789\ldots$$</p> 
+                            </li>
                         </div>
                     </div>
                     </tr>
