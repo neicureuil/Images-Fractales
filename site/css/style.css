@@ -89,7 +89,9 @@ footer {
 /**** IMAGES OVERLAY ****/ 
 .img-container {
   position: relative;
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
 }
 
 .overlay {
@@ -118,6 +120,10 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 
+.img-source.bottom-0 {
+  bottom: 0px;
+}
+
 .overlay-20 {
   height: 20%;
 }
@@ -129,6 +135,11 @@ footer {
 .img-container:hover .img-source {
   height: 8%;
 }
+
+.img-container:hover .img-source.bottom-0 {
+  height: 15%;
+}
+
 
 .img-container .text, .img-container .img-source a {
   color: white;
