@@ -8,6 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/explorateur.css" />
 	</head>
@@ -56,9 +58,13 @@
                     <h2>Historique</h2>
                     <div class="row">
                         <div class="col-md-7 text-justify">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
-                        </div>
+                            <p>Benoît Mandelbrot était un mathématicien franco-américain du 20e siècle a qui l'on attribut la découverte de nouveaux objects mathématiques : les fractales. 
+							C'est en 1967, qu'il cite comme exemple la longueur côte de la Grande-Bretagne, afin de définir une nouvelle forme de hasard. Selon lui, la longueur dépend de 
+							l’échelle à laquelle on la mesure, et possède une dimension de Hausdorff non entière, comprise entre 1 et 2, et c’est en acceptant cette idée de dimension non entière 
+							qu'il met en évidence pour la première fois: la théorie des fractales.</p>   
+							<p>Il donnera même son nom a une famille de fractales : L'ensemble de Mandelbrot, que nous allons vous présenter sur cette page. Il a également montré qu'un grand nombre 
+							d’objets dans la nature pouvaient être décrits par des fractales, conduisant ainsi à de nouveaux terrains de recherche.</p>
+						</div>
                         <div class="col-md-5">
 							<div class="img-container">
 								<a href="https://fr.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot"><img class="img-border img-fluid img-galery mx-auto" src="./images/benoit.jpg" alt="Benoit Mandelbrot"></a>
@@ -66,7 +72,7 @@
 									<div class="text">Benoit Mandelbrot</div>
 								</div>
 								<div class="img-source">
-									<div class="text"><a href="http://google.fr">La source clickable</a></div>
+									<div class="text"><a href="https://fr.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot">Source de l'image</a></div>
 								</div>
 							</div>
                         </div>
@@ -75,22 +81,34 @@
 					<h2>Définition</h2>
 					<div class="row">
 						<div class="col-md-12">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sequi dicta est aut non corporis temporibus dolorum eius doloribus reprehenderit vitae magni magnam exercitationem, labore facere quam sint et aspernatur!</p>
-							<img class="img-fluid img-border centerBlock" src="./images/Mandelbrot_Formule.png" alt="Formule Mandelbrot"><br>
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ducimus distinctio esse in accusantium vero ratione quos reprehenderit sed, libero impedit pariatur. Recusandae, a nobis quaerat ea libero molestias ducimus.</p>			
+							<p>L'ensemble de Mandelbrot est une fractale définie comme l'ensemble des points <b><em>c</em></b> du plan complexe pour lesquels la suite de nombres complexes est définie par la récurrence suivant : </p>
+							<div class="text-center" style="font-size: 200%;">
+								\(z_0=0\) <br>
+								\(z_{n+1}=Z_n^2+c\)<br>
+							</div>
+							<br>
+							<p>Avec <em><b>\(z_n\)</b></em> et <em><b>c</b></em> des nombres complexes.<br>
+							La dimension de Hausdorff de la frontière de l'ensemble de Mandelbrot vaut 2. Cela a été démontré en 1990 par <a href="https://en.wikipedia.org/wiki/Mitsuhiro_Shishikura">Mitsuhiro Shishikura</a>.
+							</p>
 						</div>
 					</div>
                     <hr>
                     <h2>Autosimilarité</h2>
                     <div class="row">
                         <div class="col-md-7 text-justify">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, optio accusantium non architecto iusto maxime nobis, ut cum impedit porro soluta itaque repudiandae! Modi rerum inventore, voluptate assumenda magni labore.
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis iste minus rem quod hic, eveniet beatae facere autem 
-							<span class="font-weight-bold" data-toggle="tooltip" title="Définition du mot compliqué" >un mot compliqué</span>
-							alias nulla rerum facilis totam excepturi natus doloribus, accusamus molestias. Delectus, dolor.</p>   
+							<p>L'ensemble de Mandelbrot est autosimilaire dans le voisinage des <span class="font-weight-bold" data-toggle="tooltip" title="Coords : −0,1011 + 0,9563i" >points de Misiurewicz</span>. 
+							Des versions réduites de l'ensemble de Mandelbrot apparaissent sur toute sa frontière, jusqu'à des grossissements infinis, avec de légères différences.
+							Cependant, de manière générale, l'ensemble de Mandelbrot n'est pas, strictement autosimilaire, c'est a dire que pour la quasi totalité des autres points, 
+							on ne retrouvera pas de motifs similaire lors d'un zoom sur ces derniers.
+							</p>
                         </div>
-                        <div class="col-md-5">
-                            <img class="img-fluid img-border centerBlock" src="./images/Mandelbrot_zoom.gif" alt="Mandelbrot Zoom" />
+                        <div class="col-md-5 text-center">
+							<div class="img-container">
+								<img class="img-border" src="./images/Mandelbrot_zoom.gif" alt="Mandelbrot Zoom">
+								<div class="img-source bottom-0">
+									<div class="text"><a href="https://fr.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot">Source de l'image</a></div>
+								</div>
+							</div>
                         </div>
 					</div>
 					<hr>
@@ -102,6 +120,9 @@
 								<img class="img-fluid img-border centerBlock img-galery mx-auto" src="./images/periodicite.png" alt="Mandelbrot periodicité" />
 								<div class="overlay">
 									<div class="text">Bourgeons & périodicités</div>
+								</div>
+								<div class="img-source">
+									<a href="https://fr.wikipedia.org/wiki/Ensemble_de_Mandelbrot#/media/Fichier:Mandelbrot_Set_%E2%80%93_Periodicities_coloured.png">Source de l'image</a>
 								</div>
 							</div>
 						</div>
