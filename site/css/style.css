@@ -72,14 +72,15 @@ footer {
   border: 1.5px solid black;
 }
 
-.card {
+.card-nat {
   transition: 0.3s;
   transition-timing-function: cubic-bezier(0.8,0.82,0.17,1);
   margin-bottom: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card:hover {
+.card-nat:hover {
+  cursor: pointer;
   transform: translate(-5px, -5px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
