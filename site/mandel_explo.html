@@ -54,6 +54,17 @@
 
 			
 			<div class="container">
+				<h2>Dessiner l'ensemble</h2>
+				<pre><code>
+					<p>Variable<br> <var>iteration_max, cr, ci, zr, zi, i, tmp : Entier</var>
+						<br>Debut<br> iteration_max=50
+						<br> Pour chaque point de coordonnées (x,y) du plan faire <br>  cr = x<br>  ci = y<br>  zr = 0<br>  zi = 0<br>  i = 0
+						<br>  Repeter<br>   tmp = zr<br>   zr = zr*zr - zi*zi + cr<br>   zi = 2*zi*tmp + ci<br>   i = i + 1<br>  TantQue (zr*zr + zi*zi &lt; 4) ET (i &lt; iteration max)
+						<br>  Si (i = iteration_max) Alors<br>   dessiner le pixel au point de coordonnées (x,y)<br>  FinSi
+						<br> FinPour<br>Fin
+					</p>
+				</code></pre>
+				<hr>
 				<h2>Galerie</h2>
 				<div class="row">
 					<div class="col-md-6">
